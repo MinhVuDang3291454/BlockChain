@@ -28,5 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      working-directory: ./src
       run: mvn verify
+     
 
